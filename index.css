@@ -1,0 +1,36 @@
+:root {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+@keyframes slide{
+    0% {left: 1000px}
+    100% {left: 0px}
+}
+
+.card {
+    height: 100px;
+    width: 60px;
+    display: inline-block;
+    margin: 5px;
+    border-radius: 10px;
+    position: relative;
+    animation: slide 1s;
+    transition: background-color 0.5s, transform 0.2s;
+    border: 2px solid black;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.final {
+    transform: rotate(5deg);
+}
+
+.final:hover {
+    transform: rotate(5deg);
+}
+
+input {
+    display: block;
+}
